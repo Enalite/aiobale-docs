@@ -1,0 +1,64 @@
+Aiobale — A Friendly Reverse-Engineered Bale API Client
+=======================================================
+
+
+**Aiobale** is an asynchronous Python client for the **Bale platform's internal API** — fully reverse-engineered, without any official `.proto` files or documentation.
+
+This library provides a high-level interface over Bale’s low-level gRPC and Protobuf-based API, making it **simple and Pythonic to use**, thanks to its clean design, powerful aliases, and developer-friendly shortcuts.
+
+Despite Bale’s API being highly obfuscated and undocumented, **Aiobale** gives you everything you need to work with it — whether you're building automation, scraping stats, or exploring internal features.
+
+.. danger::
+
+   ⚠️ Use this library at your own risk. Any usage that violates Bale's terms of service or policies may result in your account being banned — or even legal consequences.  
+   We do **not** take responsibility for misuse. This project is for **educational and ethical use only**.
+
+.. admonition:: Stay Connected
+   :class: important
+
+   For updates, changelogs, and community discussions, join our channels:
+
+   - 📢 `Bale Channel <https://ble.im/aiobale>`_
+   - 💬 `Telegram Channel <https://t.me/aiobale>`_
+
+Built with 💻 Reverse Engineering
+---------------------------------
+
+Aiobale was built entirely from scratch by reverse-engineering the **Bale web client** and inspecting network traffic.  
+We didn't have access to `.proto` files or official dev tools — just persistence, Wireshark, and a lot of trial and error.
+
+The goal?  
+Make one of the most complicated APIs usable in a single import.
+
+Right now, the **team consists of just one developer**, but with your help, we can take this further.
+
+Contribute & Support
+=====================
+
+Aiobale is an open-source project, and **your contributions are more than welcome**! Here's how you can help:
+
+- ⭐️ Give the project a star on `GitHub <https://github.com/Enalite/aiobale>`_
+- 🐞 Open issues for bugs, feature requests, or questions
+- 🛠 Submit pull requests to improve features, docs, or code
+- 📣 Spread the word with other developers and communities
+
+Every bit of support helps make this library better — and keeps it alive.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference
+   :titlesonly:
+
+   pages/installation
+   pages/get_started
+   pages/client_package
+   pages/updates
+   pages/examples
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Info
+   :titlesonly:
+
+   pages/changelog
+   Github <https://github.com/Enalite/aiobale>

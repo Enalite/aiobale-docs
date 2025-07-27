@@ -1,0 +1,7 @@
+﻿GetPins
+=======
+
+.. autoclass:: aiobale.methods.GetPins
+   :members:
+   :undoc-members:
+   :member-order: bysource

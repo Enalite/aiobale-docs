@@ -1,0 +1,7 @@
+﻿RemoveContact
+=============
+
+.. autoclass:: aiobale.methods.RemoveContact
+   :members:
+   :undoc-members:
+   :member-order: bysource

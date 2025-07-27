@@ -1,0 +1,7 @@
+﻿InviteUsers
+===========
+
+.. autoclass:: aiobale.methods.InviteUsers
+   :members:
+   :undoc-members:
+   :member-order: bysource

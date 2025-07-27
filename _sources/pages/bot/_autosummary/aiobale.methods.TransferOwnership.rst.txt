@@ -1,0 +1,7 @@
+﻿TransferOwnership
+=================
+
+.. autoclass:: aiobale.methods.TransferOwnership
+   :members:
+   :undoc-members:
+   :member-order: bysource

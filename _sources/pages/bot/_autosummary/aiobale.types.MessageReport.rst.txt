@@ -1,0 +1,7 @@
+﻿MessageReport
+=============
+
+.. autoclass:: aiobale.types.MessageReport
+   :members:
+   :undoc-members:
+   :member-order: bysource

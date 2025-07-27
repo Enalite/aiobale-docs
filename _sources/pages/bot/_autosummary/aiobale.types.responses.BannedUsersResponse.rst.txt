@@ -1,0 +1,7 @@
+﻿BannedUsersResponse
+===================
+
+.. autoclass:: aiobale.types.responses.BannedUsersResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

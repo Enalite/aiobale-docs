@@ -1,0 +1,7 @@
+﻿FullGroupResponse
+=================
+
+.. autoclass:: aiobale.types.responses.FullGroupResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

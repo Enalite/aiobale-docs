@@ -1,0 +1,7 @@
+﻿SendTypeModel
+=============
+
+.. autoclass:: aiobale.types.SendTypeModel
+   :members:
+   :undoc-members:
+   :member-order: bysource

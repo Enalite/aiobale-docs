@@ -1,0 +1,7 @@
+﻿MessageCaption
+==============
+
+.. autoclass:: aiobale.types.MessageCaption
+   :members:
+   :undoc-members:
+   :member-order: bysource

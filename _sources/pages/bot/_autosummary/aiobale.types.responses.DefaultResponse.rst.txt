@@ -1,0 +1,7 @@
+﻿DefaultResponse
+===============
+
+.. autoclass:: aiobale.types.responses.DefaultResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

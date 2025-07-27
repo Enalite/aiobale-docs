@@ -1,0 +1,7 @@
+﻿Update
+======
+
+.. autoclass:: aiobale.types.Update
+   :members:
+   :undoc-members:
+   :member-order: bysource

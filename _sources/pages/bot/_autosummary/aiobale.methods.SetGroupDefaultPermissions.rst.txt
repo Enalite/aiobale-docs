@@ -1,0 +1,7 @@
+﻿SetGroupDefaultPermissions
+==========================
+
+.. autoclass:: aiobale.methods.SetGroupDefaultPermissions
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿MessageReactions
+================
+
+.. autoclass:: aiobale.types.MessageReactions
+   :members:
+   :undoc-members:
+   :member-order: bysource

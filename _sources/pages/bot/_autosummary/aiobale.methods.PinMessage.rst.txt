@@ -1,0 +1,7 @@
+﻿PinMessage
+==========
+
+.. autoclass:: aiobale.methods.PinMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

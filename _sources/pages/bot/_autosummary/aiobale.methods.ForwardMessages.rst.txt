@@ -1,0 +1,7 @@
+﻿ForwardMessages
+===============
+
+.. autoclass:: aiobale.methods.ForwardMessages
+   :members:
+   :undoc-members:
+   :member-order: bysource

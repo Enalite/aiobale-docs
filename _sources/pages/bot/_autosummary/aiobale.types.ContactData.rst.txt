@@ -1,0 +1,7 @@
+﻿ContactData
+===========
+
+.. autoclass:: aiobale.types.ContactData
+   :members:
+   :undoc-members:
+   :member-order: bysource

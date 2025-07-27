@@ -1,0 +1,7 @@
+﻿KickUser
+========
+
+.. autoclass:: aiobale.methods.KickUser
+   :members:
+   :undoc-members:
+   :member-order: bysource

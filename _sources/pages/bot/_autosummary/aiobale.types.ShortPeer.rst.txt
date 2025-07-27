@@ -1,0 +1,7 @@
+﻿ShortPeer
+=========
+
+.. autoclass:: aiobale.types.ShortPeer
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,36 @@
+Responses
+=========
+
+.. currentmodule:: aiobale.types.responses
+
+.. autosummary::
+   :toctree: _autosummary
+   :nosignatures:
+
+   DefaultResponse
+   MessageResponse
+   PhoneAuthResponse
+   ValidateCodeResponse
+   NickNameAvailable
+   HistoryResponse
+   DialogResponse
+   FullUsersResponse
+   UsersResponse
+   BlockedUsersResponse
+   ContactResponse
+   ContactsResponse
+   ParametersResponse
+   ReactionsResponse
+   ReactionListResponse
+   ReactionSentResponse
+   ViewsResponse
+   FullGroupResponse
+   MembersResponse
+   GroupCreatedResponse
+   InviteResponse
+   InviteURLResponse
+   JoinedGroupResponse
+   GetPinsResponse
+   MemberPermissionsResponse
+   BannedUsersResponse
+   FileURLResponse

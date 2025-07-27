@@ -1,0 +1,7 @@
+﻿ClientData
+==========
+
+.. autoclass:: aiobale.types.ClientData
+   :members:
+   :undoc-members:
+   :member-order: bysource

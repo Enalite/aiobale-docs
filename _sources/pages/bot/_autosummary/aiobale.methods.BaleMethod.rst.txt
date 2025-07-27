@@ -1,0 +1,7 @@
+﻿BaleMethod
+==========
+
+.. autoclass:: aiobale.methods.BaleMethod
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿UsernameChanged
+===============
+
+.. autoclass:: aiobale.types.UsernameChanged
+   :members:
+   :undoc-members:
+   :member-order: bysource

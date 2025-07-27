@@ -1,0 +1,7 @@
+﻿UserAuth
+========
+
+.. autoclass:: aiobale.types.UserAuth
+   :members:
+   :undoc-members:
+   :member-order: bysource

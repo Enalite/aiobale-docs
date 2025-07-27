@@ -1,0 +1,7 @@
+﻿ReactionData
+============
+
+.. autoclass:: aiobale.types.ReactionData
+   :members:
+   :undoc-members:
+   :member-order: bysource

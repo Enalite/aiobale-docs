@@ -1,0 +1,7 @@
+﻿GetFullGroup
+============
+
+.. autoclass:: aiobale.methods.GetFullGroup
+   :members:
+   :undoc-members:
+   :member-order: bysource

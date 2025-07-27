@@ -1,0 +1,7 @@
+﻿PrivacyMode
+===========
+
+.. autoclass:: aiobale.enums.PrivacyMode
+   :members:
+   :undoc-members:
+   :member-order: bysource

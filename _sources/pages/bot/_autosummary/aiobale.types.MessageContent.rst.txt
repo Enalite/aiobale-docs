@@ -1,0 +1,7 @@
+﻿MessageContent
+==============
+
+.. autoclass:: aiobale.types.MessageContent
+   :members:
+   :undoc-members:
+   :member-order: bysource

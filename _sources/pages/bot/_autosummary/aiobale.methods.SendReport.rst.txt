@@ -1,0 +1,7 @@
+﻿SendReport
+==========
+
+.. autoclass:: aiobale.methods.SendReport
+   :members:
+   :undoc-members:
+   :member-order: bysource

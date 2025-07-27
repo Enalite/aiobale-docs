@@ -1,0 +1,7 @@
+﻿CreateGroup
+===========
+
+.. autoclass:: aiobale.methods.CreateGroup
+   :members:
+   :undoc-members:
+   :member-order: bysource

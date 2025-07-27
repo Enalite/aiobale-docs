@@ -1,0 +1,7 @@
+﻿AuthBody
+========
+
+.. autoclass:: aiobale.types.AuthBody
+   :members:
+   :undoc-members:
+   :member-order: bysource

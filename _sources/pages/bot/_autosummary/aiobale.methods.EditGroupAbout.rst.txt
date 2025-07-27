@@ -1,0 +1,7 @@
+﻿EditGroupAbout
+==============
+
+.. autoclass:: aiobale.methods.EditGroupAbout
+   :members:
+   :undoc-members:
+   :member-order: bysource

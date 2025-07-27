@@ -1,0 +1,7 @@
+﻿GetGroupPreview
+===============
+
+.. autoclass:: aiobale.methods.GetGroupPreview
+   :members:
+   :undoc-members:
+   :member-order: bysource

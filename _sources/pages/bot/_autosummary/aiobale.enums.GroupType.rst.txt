@@ -1,0 +1,7 @@
+﻿GroupType
+=========
+
+.. autoclass:: aiobale.enums.GroupType
+   :members:
+   :undoc-members:
+   :member-order: bysource

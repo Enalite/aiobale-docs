@@ -1,0 +1,7 @@
+﻿AddContact
+==========
+
+.. autoclass:: aiobale.methods.AddContact
+   :members:
+   :undoc-members:
+   :member-order: bysource

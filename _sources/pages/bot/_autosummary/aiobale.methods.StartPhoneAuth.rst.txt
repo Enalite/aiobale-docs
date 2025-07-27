@@ -1,0 +1,7 @@
+﻿StartPhoneAuth
+==============
+
+.. autoclass:: aiobale.methods.StartPhoneAuth
+   :members:
+   :undoc-members:
+   :member-order: bysource

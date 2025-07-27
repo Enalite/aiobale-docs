@@ -1,0 +1,7 @@
+﻿BanData
+=======
+
+.. autoclass:: aiobale.types.BanData
+   :members:
+   :undoc-members:
+   :member-order: bysource

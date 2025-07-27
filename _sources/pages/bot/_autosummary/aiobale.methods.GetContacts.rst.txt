@@ -1,0 +1,7 @@
+﻿GetContacts
+===========
+
+.. autoclass:: aiobale.methods.GetContacts
+   :members:
+   :undoc-members:
+   :member-order: bysource

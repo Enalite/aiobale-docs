@@ -1,0 +1,67 @@
+Installation
+============
+
+Getting started with **Aiobale** is quick and easy. Whether you prefer stable releases via PyPI or bleeding-edge development from GitHub, we've got you covered.
+
+📦 Requirements
+---------------
+
+- **Python 3.8+** is required.
+- A working internet connection.
+- (Optional but recommended) A virtual environment for project isolation.
+
+.. tip::
+
+   It's a good idea to use `venv` or `virtualenv` so your dependencies stay clean and organized.
+
+.. code-block:: bash
+
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+🛠 Installation Methods
+-----------------------
+
+You can install Aiobale in one of two ways:
+
+.. tab-set::
+
+   .. tab-item:: ✅ PyPI (Recommended)
+
+      This will install the latest **stable version** of Aiobale from the Python Package Index (PyPI).
+
+      .. code-block:: bash
+
+         pip install aiobale
+
+      This is the recommended method unless you need unreleased features.
+
+   .. tab-item:: 🧪 GitHub (Development Version)
+
+      If you want to try out the latest changes, bug fixes, or upcoming features, you can install directly from the GitHub repository:
+
+      .. code-block:: bash
+
+         pip install git+https://github.com/Enalite/aiobale.git
+
+      Keep in mind this version may include unstable or experimental changes.
+
+.. note::
+
+   Aiobale is published under the `aiobale` name — no extra prefixes, no nonsense.  
+   Just one clean install and you're ready to explore the depths of Bale’s API.
+
+🚀 After Installation
+----------------------
+
+To verify the installation and get started, try importing the package in Python:
+
+.. code-block:: python
+
+   import aiobale
+
+   print("Aiobale is ready to roll!")
+
+Now you're ready to explore the :doc:`get_started` and start using the full power of Bale's internal API — the easy, async, Pythonic way.
+
+Happy coding 💻🚀

@@ -1,0 +1,7 @@
+﻿DeleteMessage
+=============
+
+.. autoclass:: aiobale.methods.DeleteMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

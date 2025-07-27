@@ -1,0 +1,7 @@
+﻿Permissions
+===========
+
+.. autoclass:: aiobale.types.Permissions
+   :members:
+   :undoc-members:
+   :member-order: bysource

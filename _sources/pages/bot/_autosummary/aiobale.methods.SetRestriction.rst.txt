@@ -1,0 +1,7 @@
+﻿SetRestriction
+==============
+
+.. autoclass:: aiobale.methods.SetRestriction
+   :members:
+   :undoc-members:
+   :member-order: bysource

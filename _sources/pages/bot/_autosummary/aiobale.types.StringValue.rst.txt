@@ -1,0 +1,7 @@
+﻿StringValue
+===========
+
+.. autoclass:: aiobale.types.StringValue
+   :members:
+   :undoc-members:
+   :member-order: bysource

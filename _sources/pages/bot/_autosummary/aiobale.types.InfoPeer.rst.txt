@@ -1,0 +1,7 @@
+﻿InfoPeer
+========
+
+.. autoclass:: aiobale.types.InfoPeer
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿LoadPinnedMessages
+==================
+
+.. autoclass:: aiobale.methods.LoadPinnedMessages
+   :members:
+   :undoc-members:
+   :member-order: bysource

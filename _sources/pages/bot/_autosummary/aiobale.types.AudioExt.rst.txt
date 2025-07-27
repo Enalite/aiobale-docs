@@ -1,0 +1,7 @@
+﻿AudioExt
+========
+
+.. autoclass:: aiobale.types.AudioExt
+   :members:
+   :undoc-members:
+   :member-order: bysource

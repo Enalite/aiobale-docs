@@ -1,0 +1,7 @@
+﻿FullUser
+========
+
+.. autoclass:: aiobale.types.FullUser
+   :members:
+   :undoc-members:
+   :member-order: bysource

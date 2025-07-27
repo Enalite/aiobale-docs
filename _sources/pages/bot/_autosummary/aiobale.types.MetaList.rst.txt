@@ -1,0 +1,7 @@
+﻿MetaList
+========
+
+.. autoclass:: aiobale.types.MetaList
+   :members:
+   :undoc-members:
+   :member-order: bysource

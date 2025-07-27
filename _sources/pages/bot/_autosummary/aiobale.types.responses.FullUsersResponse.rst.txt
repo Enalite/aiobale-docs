@@ -1,0 +1,7 @@
+﻿FullUsersResponse
+=================
+
+.. autoclass:: aiobale.types.responses.FullUsersResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

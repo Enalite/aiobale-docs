@@ -1,0 +1,7 @@
+﻿SearchContact
+=============
+
+.. autoclass:: aiobale.methods.SearchContact
+   :members:
+   :undoc-members:
+   :member-order: bysource

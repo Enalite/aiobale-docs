@@ -1,0 +1,7 @@
+﻿IntValue
+========
+
+.. autoclass:: aiobale.types.IntValue
+   :members:
+   :undoc-members:
+   :member-order: bysource

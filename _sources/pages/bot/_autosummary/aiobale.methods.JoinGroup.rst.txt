@@ -1,0 +1,7 @@
+﻿JoinGroup
+=========
+
+.. autoclass:: aiobale.methods.JoinGroup
+   :members:
+   :undoc-members:
+   :member-order: bysource

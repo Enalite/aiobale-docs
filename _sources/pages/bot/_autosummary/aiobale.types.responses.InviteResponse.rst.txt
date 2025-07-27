@@ -1,0 +1,7 @@
+﻿InviteResponse
+==============
+
+.. autoclass:: aiobale.types.responses.InviteResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

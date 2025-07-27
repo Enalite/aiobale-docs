@@ -1,0 +1,7 @@
+﻿Thumbnail
+=========
+
+.. autoclass:: aiobale.types.Thumbnail
+   :members:
+   :undoc-members:
+   :member-order: bysource

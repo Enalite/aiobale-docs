@@ -1,0 +1,7 @@
+﻿LoadHistory
+===========
+
+.. autoclass:: aiobale.methods.LoadHistory
+   :members:
+   :undoc-members:
+   :member-order: bysource

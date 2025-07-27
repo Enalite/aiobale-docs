@@ -1,0 +1,7 @@
+﻿PhoneAuthResponse
+=================
+
+.. autoclass:: aiobale.types.responses.PhoneAuthResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿LeaveGroup
+==========
+
+.. autoclass:: aiobale.methods.LeaveGroup
+   :members:
+   :undoc-members:
+   :member-order: bysource

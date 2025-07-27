@@ -1,0 +1,81 @@
+Methods
+=======
+
+.. currentmodule:: aiobale.methods
+
+.. autosummary::
+   :toctree: _autosummary
+   :nosignatures:
+
+   SendMessage
+   UpdateMessage
+   ForwardMessages
+   ClearChat
+   DeleteMessage
+   MessageRead
+   DeleteChat
+   LoadHistory
+   PinMessage
+   UnPinMessages
+   LoadPinnedMessages
+   LoadDialogs
+   StartPhoneAuth
+   ValidateCode
+   ValidatePassword
+   EditName
+   CheckNickName
+   EditNickName
+   EditAbout
+   LoadFullUsers
+   LoadUsers
+   EditUserLocalName
+   BlockUser
+   UnblockUser
+   LoadBlockedUsers
+   SearchContact
+   ImportContacts
+   ResetContacts
+   RemoveContact
+   AddContact
+   GetContacts
+   GetMessagesReactions
+   GetMessageReactionsList
+   MessageSetReaction
+   MessageRemoveReaction
+   GetMessagesViews
+   GetFullGroup
+   LoadMembers
+   CreateGroup
+   InviteUsers
+   EditGroupTitle
+   EditGroupAbout
+   SetRestriction
+   GetGroupInviteURL
+   RevokeInviteURL
+   LeaveGroup
+   TransferOwnership
+   RemoveUserAdmin
+   MakeUserAdmin
+   KickUser
+   JoinGroup
+   JoinPublicGroup
+   PinGroupMessage
+   RemoveSinglePin
+   RemoveAllPins
+   GetPins
+   GetMemberPermissions
+   EditChannelUsername
+   SetMemberPermissions
+   SetGroupDefaultPermissions
+   GetBannedUsers
+   UnbanUser
+   GetGroupPreview
+   GetFileUrl
+   GetFileUploadUrl
+   EditParameter
+   GetParameters
+   SendReport
+   SetOnline
+   StopTyping
+   Typing
+   BaleMethod

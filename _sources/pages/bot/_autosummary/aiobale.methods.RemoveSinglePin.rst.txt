@@ -1,0 +1,7 @@
+﻿RemoveSinglePin
+===============
+
+.. autoclass:: aiobale.methods.RemoveSinglePin
+   :members:
+   :undoc-members:
+   :member-order: bysource

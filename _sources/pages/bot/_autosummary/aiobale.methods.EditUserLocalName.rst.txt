@@ -1,0 +1,7 @@
+﻿EditUserLocalName
+=================
+
+.. autoclass:: aiobale.methods.EditUserLocalName
+   :members:
+   :undoc-members:
+   :member-order: bysource

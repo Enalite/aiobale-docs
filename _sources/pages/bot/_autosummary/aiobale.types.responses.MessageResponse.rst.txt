@@ -1,0 +1,7 @@
+﻿MessageResponse
+===============
+
+.. autoclass:: aiobale.types.responses.MessageResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

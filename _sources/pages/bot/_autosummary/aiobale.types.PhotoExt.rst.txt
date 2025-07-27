@@ -1,0 +1,7 @@
+﻿PhotoExt
+========
+
+.. autoclass:: aiobale.types.PhotoExt
+   :members:
+   :undoc-members:
+   :member-order: bysource

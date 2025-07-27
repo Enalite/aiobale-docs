@@ -1,0 +1,7 @@
+﻿ExtData
+=======
+
+.. autoclass:: aiobale.types.ExtData
+   :members:
+   :undoc-members:
+   :member-order: bysource

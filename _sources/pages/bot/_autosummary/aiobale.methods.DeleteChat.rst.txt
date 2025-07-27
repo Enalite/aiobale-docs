@@ -1,0 +1,7 @@
+﻿DeleteChat
+==========
+
+.. autoclass:: aiobale.methods.DeleteChat
+   :members:
+   :undoc-members:
+   :member-order: bysource

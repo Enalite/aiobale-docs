@@ -1,0 +1,7 @@
+﻿RemoveAllPins
+=============
+
+.. autoclass:: aiobale.methods.RemoveAllPins
+   :members:
+   :undoc-members:
+   :member-order: bysource

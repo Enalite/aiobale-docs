@@ -1,0 +1,7 @@
+﻿RequestBody
+===========
+
+.. autoclass:: aiobale.types.RequestBody
+   :members:
+   :undoc-members:
+   :member-order: bysource

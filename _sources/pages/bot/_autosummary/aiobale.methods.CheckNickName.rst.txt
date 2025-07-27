@@ -1,0 +1,7 @@
+﻿CheckNickName
+=============
+
+.. autoclass:: aiobale.methods.CheckNickName
+   :members:
+   :undoc-members:
+   :member-order: bysource

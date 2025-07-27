@@ -1,0 +1,6 @@
+Client
+======
+
+.. autoclass:: aiobale.Client
+   :members:
+   :show-inheritance:

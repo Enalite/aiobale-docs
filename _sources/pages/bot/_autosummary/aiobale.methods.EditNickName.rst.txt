@@ -1,0 +1,7 @@
+﻿EditNickName
+============
+
+.. autoclass:: aiobale.methods.EditNickName
+   :members:
+   :undoc-members:
+   :member-order: bysource

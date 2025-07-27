@@ -1,0 +1,7 @@
+﻿GroupMessagePinned
+==================
+
+.. autoclass:: aiobale.types.GroupMessagePinned
+   :members:
+   :undoc-members:
+   :member-order: bysource

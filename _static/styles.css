@@ -1,0 +1,154 @@
+:root {
+  --color-background-primary: #f9f9fb;
+  --color-background-secondary: #ffffff;
+  --color-btn-hover: #f0f0f4;
+  --color-btn-in: #e6e6ec;
+  --color-sidebar-link-text--top-level: #222222;
+  --code-bg: #f0f0f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme=light]) {
+    --color-background-primary: #070709;
+    --color-background-secondary: #0e0e12;
+    --color-btn-hover: #16161d;
+    --color-btn-in: #1d1d27;
+    --color-sidebar-link-text--top-level: #fff;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+
+.sidebar-tree .reference {
+  transition: .3s;
+  background: #ffffff00;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 3px;
+}
+
+.sidebar-tree .reference:hover {
+  background: var(--color-btn-hover) !important;
+}
+
+.sidebar-tree .reference.current {
+  background: var(--color-btn-in) !important;
+}
+
+.sidebar-container,
+.toc-drawer {
+  box-sizing: border-box;
+  width: 15em;
+  margin: 0 auto;
+}
+
+.sidebar-container {
+  width: 100%;
+}
+
+.page {
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  gap: 3%;
+}
+
+.sidebar-drawer {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  border-radius: 30px;
+  height: calc(100% - 20px);
+  overflow: hidden;
+  width: auto;
+  border: 1px solid var(--color-sidebar-background-border);
+  padding: 10px;
+  min-width: 17rem;
+}
+
+@media (max-width: 63em) {
+  .sidebar-drawer {
+    height: 100vh;
+    left: -17em;
+    position: fixed;
+    top: 0;
+    width: 15em;
+  }
+}
+
+.sidebar-scroll {
+  padding: 0 5px;
+}
+
+.main {
+  width: 100%;
+}
+
+@media (max-width: 63em) {
+  .page {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .sidebar-drawer {
+    border-radius: 0 30px 30px 0;
+  }
+}
+
+.sidebar-tree label {
+  transition: .3s;
+  border-radius: 30px;
+}
+
+.sidebar-search {
+  border-radius: 20px;
+  border: 1px solid var(--color-sidebar-background-border);
+}
+
+.sidebar-search-container {
+  border-radius: 20px;
+}
+
+.sidebar-logo {
+  border-radius: 50%;
+}
+
+.prof-cont {
+  padding: 1rem 1rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--color-foreground-primary) !important;
+}
+
+.sidebar-tree label {
+  margin-top: 4px;
+}
+
+.sidebar-scroll p.caption {
+  padding: 5px 10px !important;
+}
+
+.main .caption-text {
+  margin: 15px 0 10px 0;
+  display: block;
+}
+
+.highlight {
+  background: var(--color-background-secondary) !important;
+  box-shadow: none !important;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.highlight pre {
+  color: #cccccc !important;
+  border-radius: 8px;
+  padding: 1em;
+  font-family: 'Fira Code', monospace;
+}

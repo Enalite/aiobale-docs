@@ -1,0 +1,7 @@
+﻿StopTyping
+==========
+
+.. autoclass:: aiobale.methods.StopTyping
+   :members:
+   :undoc-members:
+   :member-order: bysource

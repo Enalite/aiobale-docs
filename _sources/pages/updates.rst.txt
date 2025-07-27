@@ -1,0 +1,173 @@
+Handling Updates
+================
+
+In Aiobale, **update handling** allows you to respond to real-time events on the Bale platform. These updates include incoming messages, edited messages, deleted chats, blocked users, pinned group messages, and more.
+
+Using the `Router` system, you can easily define handlers for different types of updates by decorating asynchronous functions with decorators like `@router.message()`, `@router.message_edited()`, etc.
+
+Each handler receives a typed object depending on the update type – like `Message`, `SelectedMessages`, `ChatData`, etc. – giving you clean and predictable access to the event’s data.
+
+
+🟢 Message Events
+-----------------
+
+These are triggered when users send or modify messages.
+
+.. code-block:: python
+
+   from aiobale import Router
+   from aiobale.types import Message
+
+   router = Router()
+
+   @router.message(lambda m: m.text == "test")
+   async def handler(msg: Message):
+       await msg.answer("Simple message handler")
+
+:class:`aiobale.types.Message` – Represents an incoming message. Provides access to the text, sender, chat, etc.
+
+.. code-block:: python
+
+   async def async_filter(msg: Message):
+      # some async operations
+      return True
+
+   @router.message_edited(async_filter)
+   async def handler(msg: Message):
+       await msg.answer("OK.")
+
+:class:`aiobale.types.Message` – Triggered when a message is edited. Same structure as a new message.
+
+.. code-block:: python
+
+   from aiobale.types import SelectedMessages
+
+   @router.message_deleted()
+   async def handler(event: SelectedMessages):
+       print(event.ids)
+
+:class:`aiobale.types.SelectedMessages` – Contains the IDs and chat info of deleted messages.
+
+
+🗑️ Chat Events
+--------------
+
+These events notify you when a chat is cleared or deleted.
+
+.. code-block:: python
+
+   from aiobale.types import ChatData
+
+   @router.chat_deleted()
+   async def handler(event: ChatData):
+       print(event.peer)
+
+:class:`aiobale.types.ChatData` – Fired when a full chat is deleted. Includes basic peer info.
+
+.. code-block:: python
+
+   @router.chat_cleared()
+   async def handler(event: ChatData):
+       print(event.peer)
+
+:class:`aiobale.types.ChatData` – Triggered when chat history is cleared. Does not include message content.
+
+
+📤 Outgoing Message Events
+--------------------------
+
+Called when your bot (or the client) sends a message.
+
+.. code-block:: python
+
+   from aiobale.types import InfoMessage
+
+   @router.message_sent()
+   async def handler(event: InfoMessage):
+       print(event.message_id, event.peer)
+
+:class:`aiobale.types.InfoMessage` – Contains basic info about the sent message, like ID and peer.
+
+
+🔒 User Events
+--------------
+
+User-related events allow you to monitor changes in user state, identity, and interaction with your bot. These events are useful for tracking profile changes, block/unblock actions, and more.
+
+.. code-block:: python
+
+   from aiobale.types import UsernameChanged
+
+   @router.username_changed()
+   async def handler(event: UsernameChanged):
+       print(event.user_id, event.username)
+
+:class:`aiobale.types.UsernameChanged` – Fired when a user changes their username.
+
+.. code-block:: python
+
+   from aiobale.types import AboutChanged
+
+   @router.about_changed()
+   async def handler(event: AboutChanged):
+       print(event.user_id, event.about)
+
+:class:`aiobale.types.AboutChanged` – Fired when a user updates their profile "about" text.
+
+.. code-block:: python
+
+   from aiobale.types import UserBlocked
+
+   @router.user_blocked()
+   async def handler(event: UserBlocked):
+       print(event.user_id)
+
+:class:`aiobale.types.UserBlocked` – Triggered when a user blocks the bot.
+
+.. code-block:: python
+
+   from aiobale.types import UserUnblocked
+
+   @router.user_unblocked()
+   async def handler(event: UserUnblocked):
+       print(event.user_id)
+
+:class:`aiobale.types.UserUnblocked` – Triggered when a user unblocks the bot.
+
+
+📌 Group Events
+---------------
+
+Handle pin and unpin events in groups.
+
+.. code-block:: python
+
+   from aiobale.types import GroupMessagePinned
+
+   @router.group_message_pinned()
+   async def handler(event: GroupMessagePinned):
+       msg = event.message
+       await msg.reply("wow")
+
+:class:`aiobale.types.GroupMessagePinned` – Fired when a message is pinned in a group. Includes full message object.
+
+.. code-block:: python
+
+   from aiobale.types import GroupPinRemoved
+
+   @router.group_pin_removed()
+   async def handler(event: GroupPinRemoved):
+       # This event provides limited message data,
+       # not enough to build a full Message instance.
+       msg = event.message
+       print(msg.message_id, msg.date)
+
+:class:`aiobale.types.GroupPinRemoved` – Triggered when a message is unpinned. Only partial message info is available.
+
+
+.. note::
+   Some update types, like `GroupPinRemoved`, contain partial message data. You can still access key fields like `message_id`, `date`, and `peer`, but the full `Message` object is not available.
+
+
+🧠 Tip:
+Aiobale’s update system is designed to be extensible and intuitive. Each decorator corresponds directly to a real update from the Bale server, mapped into a clean Python class.

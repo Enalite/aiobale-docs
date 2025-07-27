@@ -1,0 +1,7 @@
+﻿GetMessagesViews
+================
+
+.. autoclass:: aiobale.methods.GetMessagesViews
+   :members:
+   :undoc-members:
+   :member-order: bysource

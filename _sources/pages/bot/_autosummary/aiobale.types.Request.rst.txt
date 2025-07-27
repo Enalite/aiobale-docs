@@ -1,0 +1,7 @@
+﻿Request
+=======
+
+.. autoclass:: aiobale.types.Request
+   :members:
+   :undoc-members:
+   :member-order: bysource

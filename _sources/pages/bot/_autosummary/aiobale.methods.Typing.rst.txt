@@ -1,0 +1,7 @@
+﻿Typing
+======
+
+.. autoclass:: aiobale.methods.Typing
+   :members:
+   :undoc-members:
+   :member-order: bysource

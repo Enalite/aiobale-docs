@@ -1,0 +1,32 @@
+Echo Bot
+========
+
+A minimal example bot that replies to any message with the same content.
+
+.. code-block:: python
+    :linenos:
+
+    import asyncio
+    from aiobale import Client, Dispatcher
+    from aiobale.types import Message
+
+    dp = Dispatcher()
+    client = Client(dp)
+
+
+    @dp.message()
+    async def echo(msg: Message):
+        if content := msg.content.document:
+            return await msg.answer_document(content, use_own_content=True)
+
+        elif text := msg.text:
+            return await msg.answer(text)
+
+        await msg.answer("Nothing to echo!")
+
+
+    async def main():
+        await client.start()
+
+
+    asyncio.run(main())

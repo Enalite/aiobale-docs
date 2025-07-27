@@ -1,0 +1,7 @@
+﻿QuotedMessage
+=============
+
+.. autoclass:: aiobale.types.QuotedMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

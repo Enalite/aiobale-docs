@@ -1,0 +1,7 @@
+﻿FullGroup
+=========
+
+.. autoclass:: aiobale.types.FullGroup
+   :members:
+   :undoc-members:
+   :member-order: bysource

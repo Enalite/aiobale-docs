@@ -1,0 +1,7 @@
+﻿GetGroupInviteURL
+=================
+
+.. autoclass:: aiobale.methods.GetGroupInviteURL
+   :members:
+   :undoc-members:
+   :member-order: bysource

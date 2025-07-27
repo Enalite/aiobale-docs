@@ -1,0 +1,7 @@
+﻿BoolValue
+=========
+
+.. autoclass:: aiobale.types.BoolValue
+   :members:
+   :undoc-members:
+   :member-order: bysource

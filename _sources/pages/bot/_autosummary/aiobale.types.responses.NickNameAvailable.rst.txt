@@ -1,0 +1,7 @@
+﻿NickNameAvailable
+=================
+
+.. autoclass:: aiobale.types.responses.NickNameAvailable
+   :members:
+   :undoc-members:
+   :member-order: bysource

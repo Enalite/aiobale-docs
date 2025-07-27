@@ -1,0 +1,7 @@
+﻿GetParameters
+=============
+
+.. autoclass:: aiobale.methods.GetParameters
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿EditParameter
+=============
+
+.. autoclass:: aiobale.methods.EditParameter
+   :members:
+   :undoc-members:
+   :member-order: bysource

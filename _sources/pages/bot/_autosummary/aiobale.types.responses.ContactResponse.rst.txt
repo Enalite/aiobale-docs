@@ -1,0 +1,7 @@
+﻿ContactResponse
+===============
+
+.. autoclass:: aiobale.types.responses.ContactResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,148 @@
+Getting Started
+===============
+
+Ready to write your first Aiobale bot or automation tool?  
+Let’s dive into how to use the library, from the simplest examples to deeper architectural ideas.
+
+📥 Basic Echo Bot
+------------------
+
+The easiest way to get started is by creating a simple **echo bot** that mirrors any received message:
+
+.. code-block:: python
+
+   import asyncio
+   from aiobale import Client, Dispatcher
+   from aiobale.types import Message
+
+   dp = Dispatcher()
+   client = Client(dp)
+
+   @dp.message(lambda m: m.text)
+   async def handler(msg: Message):
+       await msg.answer(msg.text)
+
+   async def main():
+       await client.start()
+
+   if __name__ == "__main__":
+       asyncio.run(main())
+
+This code does the following:
+
+- Creates a `Dispatcher` to register handlers.
+- Instantiates the `Client` and passes the dispatcher to it.
+- Registers a simple message handler that replies with the same message.
+- Calls `client.start()` to connect to Bale’s WebSocket and start receiving updates in real-time.
+
+💡 Multiple Clients Support
+----------------------------
+
+Need to run multiple clients or accounts in parallel?  
+No problem — the dispatcher system is modular and can be reused across multiple clients:
+
+.. code-block:: python
+
+   dp = Dispatcher()
+   client1 = Client(dp, session_file="user1.bale")  # First account
+   client2 = Client(dp, session_file="user2.bale")  # Second account
+
+Just call `await client1.start()` and `await client2.start()` in parallel (e.g., using `asyncio.gather()`), and they'll share the same dispatcher logic.
+
+📦 Modular Routers
+-------------------
+
+If your project grows large, you can split logic into **routers** — smaller, isolated dispatchers that can be combined.
+
+.. code-block:: python
+
+   from aiobale import Router
+   from aiobale.types import Message
+
+   router = Router()
+
+   @router.message(lambda m: m.text == "Hello, world")
+   async def handler(msg: Message):
+       await msg.answer("You forgot the '!' sign at the end.")
+
+   @router.message()
+   async def fallback_handler(msg: Message):
+       await msg.answer("Send 'Hello, world'.")
+
+You can then include this router in your main dispatcher:
+
+.. code-block:: python
+
+   from aiobale import Dispatcher, Client
+   from other import router as other_router
+
+   dp = Dispatcher()
+   dp.include_router(other_router)
+
+   client = Client(dp)
+   ...
+
+This way, you can organize handlers across files and modules.
+
+🌐 WebSocket vs Post gRPC Requests
+------------------------------
+
+By default, `Client.start()` connects to **Bale’s WebSocket**, which gives you real-time updates and faster interactions.
+
+However, **you don’t need to use WebSocket at all** if you just want to make API calls — all methods work via gRPC over HTTPS POST as well.
+
+.. danger::
+
+   ⚠️ **Caution when skipping WebSocket**
+
+   Bale officially uses gRPC over HTTPS (POST) **only for authentication methods** such as `StartPhoneAuth`, `ValidateCode`, or `ValidatePassword`.
+
+   Other interactions — like sending messages or retrieving updates — are primarily handled via WebSocket in the official clients.
+
+   Overusing POST-based gRPC for regular actions (like `send_message`, `get_dialogs`, etc.) might be seen as abnormal behavior by Bale’s backend.
+
+   **Heavy or frequent use of this mode may increase your risk of being flagged, rate-limited, or even banned.**
+
+   If you're building a bot or long-running client, using `client.start()` and sticking to WebSocket-based communication is the safer and recommended approach.
+
+Here’s how you can interact with the API directly, without starting the WebSocket connection:
+
+.. code-block:: python
+
+   import asyncio
+   from aiobale import Client
+
+   client = Client()
+
+   async def main():
+       me = await client.get_me()
+       print(me.model_dump_json(indent=4))
+
+   asyncio.run(main())
+
+In this case:
+
+- The WebSocket is **never started**
+- Requests are made directly using `POST`-based gRPC calls
+- Suitable for **scripts**, **bots**, **data collectors**, or **one-off tasks**
+
+🧠 Behind the Scenes
+----------------------
+
+Here’s what happens under the hood:
+
+- If you **use `client.start()`**, the library establishes a WebSocket connection to receive updates and handle them through your registered handlers.
+- If you **don’t call `start()`**, the library will still function: requests like `get_me()`, `send_message()`, and others work seamlessly by falling back to HTTP-based RPC.
+- You can still use the dispatcher system even if you're not listening to updates — helpful for code reuse and testability.
+
+✅ What’s Next?
+----------------
+
+- Check out the :doc:`client_package` to learn more about the structure.
+- Explore :doc:`bot/methods` to see all supported API calls.
+- Dive into :doc:`bot/types` to understand the data models.
+- Read :doc:`bot/responses` to learn about response structures.
+
+---
+
+Aiobale was built to be intuitive and flexible. Whether you're building a real-time bot or scripting something clever, you're already set up with clean async architecture.

@@ -1,0 +1,7 @@
+﻿AboutChanged
+============
+
+.. autoclass:: aiobale.types.AboutChanged
+   :members:
+   :undoc-members:
+   :member-order: bysource

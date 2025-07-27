@@ -1,0 +1,7 @@
+﻿VideoExt
+========
+
+.. autoclass:: aiobale.types.VideoExt
+   :members:
+   :undoc-members:
+   :member-order: bysource

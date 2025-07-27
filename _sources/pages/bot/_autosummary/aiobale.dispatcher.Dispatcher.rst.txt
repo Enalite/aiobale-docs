@@ -1,0 +1,7 @@
+﻿Dispatcher
+==========
+
+.. autoclass:: aiobale.dispatcher.Dispatcher
+   :members:
+   :undoc-members:
+   :member-order: bysource

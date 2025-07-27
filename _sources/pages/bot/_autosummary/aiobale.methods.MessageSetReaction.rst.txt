@@ -1,0 +1,7 @@
+﻿MessageSetReaction
+==================
+
+.. autoclass:: aiobale.methods.MessageSetReaction
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿PeerReport
+==========
+
+.. autoclass:: aiobale.types.PeerReport
+   :members:
+   :undoc-members:
+   :member-order: bysource

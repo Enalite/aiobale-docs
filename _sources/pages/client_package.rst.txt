@@ -1,0 +1,27 @@
+##########
+Client Package
+##########
+
+This package contains the main client interface and related components of the bot system.
+
+The **Client** provides access to all available methods used to interact with the platform. You can explore the :doc:`bot/methods` section to discover the full list of supported methods.
+
+Each method typically returns either a **type** (from :doc:`bot/types`) or a **response class** (from :doc:`bot/responses`), depending on the operation. Some methods may return complex structures defined in the `types` module, while others may use dedicated response wrappers.
+
+To understand the structure of input or output data, see:
+
+- :doc:`bot/types` — contains available data types used across methods.
+- :doc:`bot/enums` — includes useful enumerations for request parameters.
+- :doc:`bot/responses` — wraps and structures method responses when applicable.
+
+If you're looking for how to perform a certain action, **start by checking the Client methods**. Once you find a method that matches your use case, refer to the relevant type or response class to understand what data you’ll receive or need to send.
+
+.. toctree::
+   :titlesonly:
+
+   bot/client
+   bot/events
+   bot/methods
+   bot/types
+   bot/enums
+   bot/responses

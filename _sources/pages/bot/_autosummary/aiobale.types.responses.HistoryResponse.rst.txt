@@ -1,0 +1,7 @@
+﻿HistoryResponse
+===============
+
+.. autoclass:: aiobale.types.responses.HistoryResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

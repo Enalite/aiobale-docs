@@ -1,0 +1,20 @@
+Changelog
+=========
+
+All notable changes to **Aiobale** will be documented on this page.  
+We follow semantic versioning as closely as possible (`MAJOR.MINOR.PATCH`), and we aim to keep things clear, developer-friendly, and well-documented.
+
+.. note::
+
+   This project is still in early development — but once we have releases, you’ll find every change right here.
+
+📅 Current Status
+-----------------
+
+There are no official changelogs yet.  
+We're working hard on the first stable version of **Aiobale**, and once it's ready, all updates, improvements, and bugfixes will appear on this page.
+
+Stay tuned and join our channels to get notified when we release something new:
+
+- 📢 `Bale Channel <https://ble.im/aiobale>`_
+- 💬 `Telegram Channel <https://t.me/aiobale>`_

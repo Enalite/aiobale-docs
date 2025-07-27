@@ -1,0 +1,7 @@
+﻿MessageViews
+============
+
+.. autoclass:: aiobale.types.MessageViews
+   :members:
+   :undoc-members:
+   :member-order: bysource

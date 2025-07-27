@@ -1,0 +1,7 @@
+﻿GetBannedUsers
+==============
+
+.. autoclass:: aiobale.methods.GetBannedUsers
+   :members:
+   :undoc-members:
+   :member-order: bysource

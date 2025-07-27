@@ -1,0 +1,7 @@
+﻿DocumentsExt
+============
+
+.. autoclass:: aiobale.types.DocumentsExt
+   :members:
+   :undoc-members:
+   :member-order: bysource

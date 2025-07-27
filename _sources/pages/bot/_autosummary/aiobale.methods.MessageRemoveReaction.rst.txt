@@ -1,0 +1,7 @@
+﻿MessageRemoveReaction
+=====================
+
+.. autoclass:: aiobale.methods.MessageRemoveReaction
+   :members:
+   :undoc-members:
+   :member-order: bysource

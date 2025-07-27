@@ -1,0 +1,7 @@
+﻿FileURL
+=======
+
+.. autoclass:: aiobale.types.FileURL
+   :members:
+   :undoc-members:
+   :member-order: bysource

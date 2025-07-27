@@ -1,0 +1,7 @@
+﻿Peer
+====
+
+.. autoclass:: aiobale.types.Peer
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿FileDetails
+===========
+
+.. autoclass:: aiobale.types.FileDetails
+   :members:
+   :undoc-members:
+   :member-order: bysource

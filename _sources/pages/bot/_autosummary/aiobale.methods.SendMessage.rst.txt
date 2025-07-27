@@ -1,0 +1,7 @@
+﻿SendMessage
+===========
+
+.. autoclass:: aiobale.methods.SendMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿SetMemberPermissions
+====================
+
+.. autoclass:: aiobale.methods.SetMemberPermissions
+   :members:
+   :undoc-members:
+   :member-order: bysource

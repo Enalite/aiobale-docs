@@ -1,0 +1,7 @@
+﻿DocumentMessage
+===============
+
+.. autoclass:: aiobale.types.DocumentMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

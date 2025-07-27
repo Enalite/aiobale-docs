@@ -1,0 +1,7 @@
+﻿Router
+======
+
+.. autoclass:: aiobale.dispatcher.Router
+   :members:
+   :undoc-members:
+   :member-order: bysource

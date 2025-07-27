@@ -1,0 +1,7 @@
+﻿UpdateMessage
+=============
+
+.. autoclass:: aiobale.methods.UpdateMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -1,0 +1,7 @@
+﻿TextMessage
+===========
+
+.. autoclass:: aiobale.types.TextMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

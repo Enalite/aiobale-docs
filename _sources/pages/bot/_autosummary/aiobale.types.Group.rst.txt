@@ -1,0 +1,7 @@
+﻿Group
+=====
+
+.. autoclass:: aiobale.types.Group
+   :members:
+   :undoc-members:
+   :member-order: bysource

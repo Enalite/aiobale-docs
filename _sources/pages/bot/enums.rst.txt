@@ -1,0 +1,21 @@
+Enums
+=====
+
+.. currentmodule:: aiobale.enums
+
+.. autosummary::
+   :toctree: _autosummary
+   :nosignatures:
+
+   ChatType
+   PeerType
+   Services
+   SendCodeType
+   ListLoadMode
+   PrivacyMode
+   ReportKind
+   PeerSource
+   TypingMode
+   GroupType
+   Restriction
+   SendType

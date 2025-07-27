@@ -1,0 +1,7 @@
+﻿GroupCreatedResponse
+====================
+
+.. autoclass:: aiobale.types.responses.GroupCreatedResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

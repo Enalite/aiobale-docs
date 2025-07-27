@@ -1,0 +1,54 @@
+Examples
+==========
+
+Looking for real-world examples? Here's a set of **hands-on snippets** to help you use `aiobale` effectively.
+
+Each example has its own page with clean code.
+
+----
+
+🔁 Echo Bot
+-----------
+
+A minimal bot that echoes every message it receives.  
+📄 `View Code → <./examples/echo.html>`_
+
+----
+
+🔗 Join via Link
+----------------
+
+Auto-joins a group, channel, or private chat by link.  
+📄 `View Code → <./examples/join_link.html>`_
+
+----
+
+📎 Send File
+------------
+
+How to upload and send a local file (e.g., image, document).  
+📄 `View Code → <./examples/send_file.html>`_
+
+----
+
+📥 Download File
+----------------
+
+Downloads a received file and saves it locally.  
+📄 `View Code → <./examples/download_file.html>`_
+
+----
+
+👤 Mention All Members
+-----------------------
+
+Mentions all group members with a username in one message.  
+📄 `View Code → <./examples/group_mention.html>`_
+
+----
+
+💡 More Coming Soon...
+-----------------------
+
+We’ll be adding more examples over time! Want to contribute?  
+👉 `GitHub Repository <https://github.com/Enalite/aiobale>`_

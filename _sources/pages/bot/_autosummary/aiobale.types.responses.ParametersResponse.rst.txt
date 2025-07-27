@@ -1,0 +1,7 @@
+﻿ParametersResponse
+==================
+
+.. autoclass:: aiobale.types.responses.ParametersResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

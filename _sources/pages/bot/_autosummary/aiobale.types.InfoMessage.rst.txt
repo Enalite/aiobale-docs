@@ -1,0 +1,7 @@
+﻿InfoMessage
+===========
+
+.. autoclass:: aiobale.types.InfoMessage
+   :members:
+   :undoc-members:
+   :member-order: bysource

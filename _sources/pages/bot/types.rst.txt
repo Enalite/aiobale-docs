@@ -1,0 +1,77 @@
+Types
+=====
+
+.. currentmodule:: aiobale.types
+
+.. autosummary::
+   :toctree: _autosummary
+   :nosignatures:
+
+   Chat
+   Message
+   MessageContent
+   Peer
+   ClientData
+   TextMessage
+   OtherMessage
+   Request
+   RequestBody
+   Response
+   AuthBody
+   ExtData
+   ExtValue
+   MetaList
+   IntBool
+   UserAuth
+   UpdateBody
+   Update
+   StringValue
+   IntValue
+   BytesValue
+   InfoMessage
+   QuotedMessage
+   MessageData
+   SelectedMessages
+   ChatData
+   UsernameChanged
+   AboutChanged
+   UpdatedMessage
+   PeerData
+   InfoPeer
+   FullUser
+   ExtKeyValue
+   User
+   ContactData
+   UserBlocked
+   UserUnblocked
+   GroupMessagePinned
+   GroupPinRemoved
+   ShortPeer
+   Report
+   PeerReport
+   MessageReport
+   Reaction
+   MessageReactions
+   ReactionData
+   MessageViews
+   FullGroup
+   Permissions
+   Member
+   Group
+   BoolValue
+   Condition
+   BanData
+   FileInfo
+   FileURL
+   SendTypeModel
+   FileDetails
+   FileInput
+   FileUploadInfo
+   DocumentMessage
+   MessageCaption
+   Thumbnail
+   VideoExt
+   VoiceExt
+   AudioExt
+   PhotoExt
+   DocumentsExt

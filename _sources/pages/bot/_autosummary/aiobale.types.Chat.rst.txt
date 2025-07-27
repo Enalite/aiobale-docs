@@ -1,0 +1,7 @@
+﻿Chat
+====
+
+.. autoclass:: aiobale.types.Chat
+   :members:
+   :undoc-members:
+   :member-order: bysource
