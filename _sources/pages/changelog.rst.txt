@@ -16,5 +16,5 @@ We're working hard on the first stable version of **Aiobale**, and once it's rea
 
 Stay tuned and join our channels to get notified when we release something new:
 
-- 📢 `Bale Channel <https://ble.im/aiobale>`_
+- 📢 `Bale Channel <https://ble.ir/aiobale>`_
 - 💬 `Telegram Channel <https://t.me/aiobale>`_

@@ -18,7 +18,7 @@ Despite Bale’s API being highly obfuscated and undocumented, **Aiobale** gives
 
    For updates, changelogs, and community discussions, join our channels:
 
-   - 📢 `Bale Channel <https://ble.im/aiobale>`_
+   - 📢 `Bale Channel <https://ble.ir/aiobale>`_
    - 💬 `Telegram Channel <https://t.me/aiobale>`_
 
 Built with 💻 Reverse Engineering
