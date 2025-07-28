@@ -468,6 +468,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>document</strong> (<a class="reference internal" href="aiobale.types.DocumentMessage.html#aiobale.types.DocumentMessage" title="aiobale.types.message_content.DocumentMessage"><em>DocumentMessage</em></a><em> | </em><em>None</em>)</p></li>
+<li><p><strong>empty</strong> (<em>bool</em>)</p></li>
 <li><p><strong>text</strong> (<a class="reference internal" href="aiobale.types.TextMessage.html#aiobale.types.TextMessage" title="aiobale.types.message_content.TextMessage"><em>TextMessage</em></a><em> | </em><em>None</em>)</p></li>
 <li><p><strong>extra_data</strong> (<em>Any</em>)</p></li>
 </ul>
@@ -477,6 +478,12 @@
 <dt class="sig sig-object py" id="aiobale.types.MessageContent.document">
 <span class="sig-name descname"><span class="pre">document</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[DocumentMessage]</span></em><a class="headerlink" href="#aiobale.types.MessageContent.document" title="Link to this definition">¶</a></dt>
 <dd><p>Optional document content if the message includes a file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="aiobale.types.MessageContent.empty">
+<span class="sig-name descname"><span class="pre">empty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#aiobale.types.MessageContent.empty" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the message is either forwarded or an empty stub.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -547,6 +554,7 @@
 <li><a class="reference internal" href="#">MessageContent</a><ul>
 <li><a class="reference internal" href="#aiobale.types.MessageContent"><code class="docutils literal notranslate"><span class="pre">MessageContent</span></code></a><ul>
 <li><a class="reference internal" href="#aiobale.types.MessageContent.document"><code class="docutils literal notranslate"><span class="pre">MessageContent.document</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.types.MessageContent.empty"><code class="docutils literal notranslate"><span class="pre">MessageContent.empty</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.MessageContent.text"><code class="docutils literal notranslate"><span class="pre">MessageContent.text</span></code></a></li>
 </ul>
 </li>
