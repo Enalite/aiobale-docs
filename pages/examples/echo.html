@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Echo Bot - aiobale 0.1.0 documentation</title>
+        <title>Echo Bot - aiobale 0.1.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -169,7 +169,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">aiobale 0.1.0 documentation</div></a>
+      <a href="../../index.html"><div class="brand">aiobale 0.1.1 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -193,7 +193,7 @@
       <div class="sidebar-sticky"><a href="../../index.html" class="prof-cont" style="text-decoration: none;">
   <img src="../../_static/logo.png" alt="Logo" style="height: 48px; border-radius: 12px;">
   <div>
-    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.0</span></div>
+    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.1</span></div>
     <div style="font-size: 0.85rem; color: #888;">
         Modern async client for Bale.
     </div>
@@ -461,29 +461,42 @@
 <h1>Echo Bot<a class="headerlink" href="#echo-bot" title="Link to this heading">¶</a></h1>
 <p>A minimal example bot that replies to any message with the same content.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">aiobale</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">Dispatcher</span>
-<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">aiobale.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">Message</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">aiobale2</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">Dispatcher</span>
+<span class="linenos"> 3</span><span class="kn">from</span><span class="w"> </span><span class="nn">aiobale2.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">Message</span>
 <span class="linenos"> 4</span>
 <span class="linenos"> 5</span><span class="n">dp</span> <span class="o">=</span> <span class="n">Dispatcher</span><span class="p">()</span>
-<span class="linenos"> 6</span><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">dp</span><span class="p">,</span> <span class="s2">&quot;new.bale&quot;</span><span class="p">)</span>
 <span class="linenos"> 7</span>
 <span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="nd">@dp</span><span class="o">.</span><span class="n">message</span><span class="p">()</span>
-<span class="linenos">10</span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">echo</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="n">Message</span><span class="p">):</span>
-<span class="linenos">11</span>    <span class="k">if</span> <span class="n">content</span> <span class="o">:=</span> <span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">document</span><span class="p">:</span>
-<span class="linenos">12</span>        <span class="k">return</span> <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer_document</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">use_own_content</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="linenos">13</span>
-<span class="linenos">14</span>    <span class="k">elif</span> <span class="n">text</span> <span class="o">:=</span> <span class="n">msg</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
-<span class="linenos">15</span>        <span class="k">return</span> <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">extract_content</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="n">Message</span><span class="p">):</span>
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">document</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="k">return</span> <span class="s1">&#39;document&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">document</span>
+<span class="linenos">12</span>    <span class="k">elif</span> <span class="n">msg</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+<span class="linenos">13</span>        <span class="k">return</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">.</span><span class="n">text</span>
+<span class="linenos">14</span>    <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+<span class="linenos">15</span>
 <span class="linenos">16</span>
-<span class="linenos">17</span>    <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="s2">&quot;Nothing to echo!&quot;</span><span class="p">)</span>
-<span class="linenos">18</span>
-<span class="linenos">19</span>
-<span class="linenos">20</span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<span class="linenos">21</span>    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-<span class="linenos">22</span>
-<span class="linenos">23</span>
-<span class="linenos">24</span><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+<span class="linenos">17</span><span class="nd">@dp</span><span class="o">.</span><span class="n">message</span><span class="p">()</span>
+<span class="linenos">18</span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">echo</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="n">Message</span><span class="p">):</span>
+<span class="linenos">19</span>    <span class="n">type_</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">extract_content</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span>    <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">empty</span> <span class="ow">and</span> <span class="n">msg</span><span class="o">.</span><span class="n">replied_to</span><span class="p">:</span>
+<span class="linenos">22</span>        <span class="c1"># This message was not originally sent by the user; it was forwarded from somewhere else</span>
+<span class="linenos">23</span>        <span class="n">type_</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">extract_content</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">replied_to</span><span class="p">)</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span>    <span class="k">if</span> <span class="n">type_</span> <span class="o">==</span> <span class="s1">&#39;document&#39;</span><span class="p">:</span>
+<span class="linenos">26</span>        <span class="k">return</span> <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer_document</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">use_own_content</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="linenos">27</span>    <span class="k">elif</span> <span class="n">type_</span> <span class="o">==</span> <span class="s1">&#39;text&#39;</span><span class="p">:</span>
+<span class="linenos">28</span>        <span class="k">return</span> <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span>    <span class="k">await</span> <span class="n">msg</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="s2">&quot;Nothing to echo!&quot;</span><span class="p">)</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<span class="linenos">34</span>    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
 </div>
 </section>
@@ -519,7 +532,7 @@
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=01f34227"></script>
+</div><script src="../../_static/documentation_options.js?v=a58bc63e"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
