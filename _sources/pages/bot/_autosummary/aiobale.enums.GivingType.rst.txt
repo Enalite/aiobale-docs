@@ -1,0 +1,7 @@
+﻿GivingType
+==========
+
+.. autoclass:: aiobale.enums.GivingType
+   :members:
+   :undoc-members:
+   :member-order: bysource

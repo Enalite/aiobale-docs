@@ -1,0 +1,7 @@
+﻿Winner
+======
+
+.. autoclass:: aiobale.types.Winner
+   :members:
+   :undoc-members:
+   :member-order: bysource

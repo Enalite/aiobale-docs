@@ -47,6 +47,14 @@ Mentions all group members with a username in one message.
 
 ----
 
+🎁 Gift Packet
+-----------------------
+
+Resends every gift it receives.  
+📄 `View Code → <./examples/gift_packet.html>`_
+
+----
+
 💡 More Coming Soon...
 -----------------------
 

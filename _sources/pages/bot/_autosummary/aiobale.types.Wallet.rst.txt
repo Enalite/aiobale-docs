@@ -1,0 +1,7 @@
+﻿Wallet
+======
+
+.. autoclass:: aiobale.types.Wallet
+   :members:
+   :undoc-members:
+   :member-order: bysource

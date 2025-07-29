@@ -75,3 +75,6 @@ Types
    AudioExt
    PhotoExt
    DocumentsExt
+   Wallet
+   GiftPacket
+   Winner

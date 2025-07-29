@@ -34,3 +34,5 @@ Responses
    MemberPermissionsResponse
    BannedUsersResponse
    FileURLResponse
+   WalletResponse
+   PacketResponse

@@ -1,0 +1,7 @@
+﻿PacketResponse
+==============
+
+.. autoclass:: aiobale.types.responses.PacketResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

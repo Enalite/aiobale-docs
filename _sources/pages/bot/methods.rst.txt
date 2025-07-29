@@ -79,3 +79,6 @@ Methods
    StopTyping
    Typing
    BaleMethod
+   GetMyKifpools
+   SendGiftPacketWithWallet
+   OpenGiftPacket

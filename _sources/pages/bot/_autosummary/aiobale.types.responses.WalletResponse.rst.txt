@@ -1,0 +1,7 @@
+﻿WalletResponse
+==============
+
+.. autoclass:: aiobale.types.responses.WalletResponse
+   :members:
+   :undoc-members:
+   :member-order: bysource

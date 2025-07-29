@@ -1,0 +1,7 @@
+﻿OpenGiftPacket
+==============
+
+.. autoclass:: aiobale.methods.OpenGiftPacket
+   :members:
+   :undoc-members:
+   :member-order: bysource
