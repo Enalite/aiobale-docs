@@ -11,6 +11,7 @@ Automatically joins a group or channel when a valid link is sent to the bot.
     from typing import Optional
     from aiobale import Client, Dispatcher
     from aiobale.types import Message
+    from aiobale.filters import IsText
 
     dp = Dispatcher()
     client = Client(dp)
@@ -33,7 +34,7 @@ Automatically joins a group or channel when a valid link is sent to the bot.
             return None
 
 
-    @dp.message(lambda m: m.text)
+    @dp.message(IsText())
     async def join(msg: Message):
         link_data = get_link(msg.text)
         if not link_data:

@@ -1,0 +1,7 @@
+﻿Filter
+======
+
+.. autoclass:: aiobale.filters.Filter
+   :members:
+   :undoc-members:
+   :member-order: bysource

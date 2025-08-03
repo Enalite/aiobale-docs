@@ -1,0 +1,6 @@
+﻿aiobale.filters.or\_f
+=====================
+
+.. currentmodule:: aiobale.filters
+
+.. autofunction:: or_f

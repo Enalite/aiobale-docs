@@ -28,6 +28,7 @@ Types
    StringValue
    IntValue
    BytesValue
+   IntListValue
    InfoMessage
    QuotedMessage
    MessageData

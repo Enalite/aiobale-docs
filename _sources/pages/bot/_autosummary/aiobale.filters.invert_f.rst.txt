@@ -1,0 +1,6 @@
+﻿aiobale.filters.invert\_f
+=========================
+
+.. currentmodule:: aiobale.filters
+
+.. autofunction:: invert_f

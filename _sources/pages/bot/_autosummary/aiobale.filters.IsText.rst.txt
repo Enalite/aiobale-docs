@@ -1,0 +1,7 @@
+﻿IsText
+======
+
+.. autoclass:: aiobale.filters.IsText
+   :members:
+   :undoc-members:
+   :member-order: bysource

@@ -82,3 +82,4 @@ Methods
    GetMyKifpools
    SendGiftPacketWithWallet
    OpenGiftPacket
+   SignOut

@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>aiobale.client.client - aiobale 0.1.2 documentation</title>
+        <title>aiobale.client.client - aiobale 0.1.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -168,7 +168,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">aiobale 0.1.2 documentation</div></a>
+      <a href="../../../index.html"><div class="brand">aiobale 0.1.3 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -192,7 +192,7 @@
       <div class="sidebar-sticky"><a href="../../../index.html" class="prof-cont" style="text-decoration: none;">
   <img src="../../../_static/logo.png" alt="Logo" style="height: 48px; border-radius: 12px;">
   <div>
-    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.2</span></div>
+    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.3</span></div>
     <div style="font-size: 0.85rem; color: #888;">
         Modern async client for Bale.
     </div>
@@ -292,6 +292,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.methods.GetMyKifpools.html">GetMyKifpools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.methods.SendGiftPacketWithWallet.html">SendGiftPacketWithWallet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.methods.OpenGiftPacket.html">OpenGiftPacket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.methods.SignOut.html">SignOut</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../pages/bot/types.html">Types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Types</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -316,6 +317,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.StringValue.html">StringValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.IntValue.html">IntValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.BytesValue.html">BytesValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.IntListValue.html">IntListValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.InfoMessage.html">InfoMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.QuotedMessage.html">QuotedMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.MessageData.html">MessageData</a></li>
@@ -417,6 +419,20 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.types.responses.PacketResponse.html">PacketResponse</a></li>
 </ul>
 </li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../pages/bot/filters.html">Filters</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Filters</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.Filter.html">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.invert_f.html">aiobale.filters.invert_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.or_f.html">aiobale.filters.or_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.and_f.html">aiobale.filters.and_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.RegexFilter.html">RegexFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.IsPrivate.html">IsPrivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.IsGroupOrChannel.html">IsGroupOrChannel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.ChatTypeFilter.html">ChatTypeFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.IsText.html">IsText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.IsDocument.html">IsDocument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/bot/_autosummary/aiobale.filters.IsGift.html">IsGift</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../pages/updates.html">Handling Updates</a></li>
@@ -466,12 +482,16 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">signal</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">aiofiles</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">AsyncGenerator</span><span class="p">,</span>
     <span class="n">BinaryIO</span><span class="p">,</span>
     <span class="n">Callable</span><span class="p">,</span>
+    <span class="n">Coroutine</span><span class="p">,</span>
     <span class="n">List</span><span class="p">,</span>
     <span class="n">Literal</span><span class="p">,</span>
     <span class="n">Optional</span><span class="p">,</span>
@@ -564,6 +584,7 @@
     <span class="n">GetMyKifpools</span><span class="p">,</span>
     <span class="n">SendGiftPacketWithWallet</span><span class="p">,</span>
     <span class="n">OpenGiftPacket</span><span class="p">,</span>
+    <span class="n">SignOut</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">..types</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">MessageContent</span><span class="p">,</span>
@@ -738,6 +759,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_ping_id</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tasks</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stopped</span> <span class="o">=</span> <span class="kc">False</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">session_file</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">session_file</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span>
             <span class="s2">&quot;.bale&quot;</span>
@@ -783,6 +806,12 @@
 <span class="sd">        in event handling and API interactions.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_me</span><span class="o">.</span><span class="n">id</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">_create_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coro</span><span class="p">:</span> <span class="n">Coroutine</span><span class="p">):</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">coro</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tasks</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">add_done_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tasks</span><span class="o">.</span><span class="n">discard</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">task</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_write_session_content</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">__session_file</span><span class="p">:</span>
@@ -829,6 +858,17 @@
 
         <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
 
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_cleanup_session</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">is_closed</span><span class="p">():</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
+                <span class="k">with</span> <span class="n">suppress</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">):</span>
+                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span> <span class="o">=</span> <span class="kc">None</span>
+
     <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_send_ping</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">is_closed</span><span class="p">():</span>
@@ -844,7 +884,7 @@
                 <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">send_bytes</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ping_</span><span class="si">{</span><span class="n">ping_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
             <span class="k">except</span> <span class="ne">RuntimeError</span><span class="p">:</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Ping failed. Closing session to trigger restart.&quot;</span><span class="p">)</span>
-                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_session</span><span class="p">()</span>
 
     <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_ping_loop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
@@ -852,23 +892,36 @@
                 <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">interval</span><span class="p">)</span>
                 <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_ping</span><span class="p">()</span>
         <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
-            <span class="k">pass</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Ping loop cancelled.&quot;</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error in ping loop: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
-                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_session</span><span class="p">()</span>
 
     <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_safe_listen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">_listen</span><span class="p">()</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Listen failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
-                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_session</span><span class="p">()</span>
+            
+    <span class="k">def</span><span class="w"> </span><span class="nf">_setup_signal_handlers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loop</span><span class="p">):</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">handler</span><span class="p">():</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Signal received, stopping client...&quot;</span><span class="p">)</span>
+            <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">())</span>
+
+        <span class="n">signals</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">!=</span> <span class="s2">&quot;win32&quot;</span><span class="p">:</span>
+            <span class="n">signals</span> <span class="o">=</span> <span class="p">[</span><span class="n">signal</span><span class="o">.</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">SIGTERM</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">sig</span> <span class="ow">in</span> <span class="n">signals</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">loop</span><span class="o">.</span><span class="n">add_signal_handler</span><span class="p">(</span><span class="n">sig</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Signal </span><span class="si">{</span><span class="n">sig</span><span class="si">}</span><span class="s2"> handler not implemented.&quot;</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Client.start">
 <a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.start">[docs]</a>
-    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run_in_background</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run_in_background</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Starts the client session and begins listening for events.</span>
 <span class="sd">        Args:</span>
@@ -883,37 +936,46 @@
 <span class="sd">        and starts listening for incoming events. Use `run_in_background=True` to keep listening without blocking</span>
 <span class="sd">        the current coroutine.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stopped</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ensure_token_exists</span><span class="p">()</span>
+        
+        <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_running_loop</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setup_signal_handlers</span><span class="p">(</span><span class="n">loop</span><span class="p">)</span>
 
-        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
-                <span class="k">try</span><span class="p">:</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Trying to connect...&quot;</span><span class="p">)</span>
-                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__token</span><span class="p">)</span>
-                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">handshake_request</span><span class="p">()</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Connected successfully.&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stopped</span><span class="p">:</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_session</span><span class="p">()</span>
 
-                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="p">:</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
-                        <span class="k">with</span> <span class="n">suppress</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">):</span>
-                            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span>
+                <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Trying to connect...&quot;</span><span class="p">)</span>
+                        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__token</span><span class="p">)</span>
+                        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">handshake_request</span><span class="p">()</span>
+                        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Connected successfully.&quot;</span><span class="p">)</span>
 
-                    <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_ping_loop</span><span class="p">())</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_ping_loop</span><span class="p">())</span>
+                        <span class="n">listen_task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_safe_listen</span><span class="p">())</span>
+                    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+                        <span class="k">continue</span>
 
-                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-                    <span class="k">continue</span>
-
-            <span class="k">try</span><span class="p">:</span>
                 <span class="k">if</span> <span class="n">run_in_background</span><span class="p">:</span>
-                    <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_safe_listen</span><span class="p">())</span>
-                    <span class="k">break</span>
+                    <span class="k">return</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_safe_listen</span><span class="p">()</span>
-            <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Start cancelled.&quot;</span><span class="p">)</span>
-                <span class="k">break</span></div>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="k">await</span> <span class="n">listen_task</span>
+                    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+                        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Listening task cancelled.&quot;</span><span class="p">)</span>
+                        <span class="k">break</span>
+
+        <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;KeyboardInterrupt received, stopping client...&quot;</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unhandled exception in start: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="k">raise</span></div>
 
 
 <div class="viewcode-block" id="Client.stop">
@@ -926,13 +988,27 @@
 <span class="sd">        released. It should be called when the client is no longer needed to</span>
 <span class="sd">        prevent resource leaks.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stopped</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stopped</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Stopping client...&quot;</span><span class="p">)</span>
+
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
             <span class="k">with</span> <span class="n">suppress</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">):</span>
                 <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_ping_task</span> <span class="o">=</span> <span class="kc">None</span>
 
-        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+        <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tasks</span><span class="p">):</span>
+            <span class="n">task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tasks</span><span class="p">):</span>
+            <span class="k">with</span> <span class="n">suppress</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">):</span>
+                <span class="k">await</span> <span class="n">task</span>
+
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_session</span><span class="p">()</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Client stopped cleanly.&quot;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Client.handle_update">
@@ -1120,6 +1196,41 @@
 
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">AiobaleError</span><span class="p">(</span><span class="s2">&quot;Error while parsing data.&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span></div>
+
+
+<div class="viewcode-block" id="Client.sign_out">
+<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.sign_out">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">sign_out</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delete_session</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Signs out the current user and optionally deletes the session file.</span>
+
+<span class="sd">        This method sends a sign-out request to the server, stops the client session,</span>
+<span class="sd">        and if requested, deletes the local session file from disk.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            delete_session (bool, optional): Whether to delete the local session file after sign out.</span>
+<span class="sd">                Defaults to True.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            OSError: If the session file deletion fails due to an OS-level error.</span>
+<span class="sd">            Exception: Any unexpected exceptions during stopping the client or file deletion.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">call</span> <span class="o">=</span> <span class="n">SignOut</span><span class="p">()</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">call</span><span class="p">,</span> <span class="n">just_bale_type</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__token</span><span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">delete_session</span>
+            <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">__session_file</span>
+            <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__session_file</span><span class="p">)</span>
+        <span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__session_file</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Session file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__session_file</span><span class="si">}</span><span class="s2">&#39; deleted successfully.&quot;</span>
+                <span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to delete session file: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Client.send_message">
@@ -2067,7 +2178,7 @@
 <span class="sd">            AiobaleError: For client-side errors.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">call</span> <span class="o">=</span> <span class="n">GetContacts</span><span class="p">()</span>
-        <span class="n">result</span><span class="p">:</span> <span class="n">BlockedUsersResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="p">(</span><span class="n">call</span><span class="p">)</span>
+        <span class="n">result</span><span class="p">:</span> <span class="n">BannedUsersResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="p">(</span><span class="n">call</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">users</span></div>
 
 
@@ -4042,9 +4153,9 @@
         <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="p">(</span><span class="n">call</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="Client.send_giftpacket">
-<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.send_giftpacket">[docs]</a>
-    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_giftpacket</span><span class="p">(</span>
+<div class="viewcode-block" id="Client.send_gift">
+<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.send_gift">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_gift</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">chat_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
         <span class="n">chat_type</span><span class="p">:</span> <span class="n">ChatType</span><span class="p">,</span>
@@ -4056,13 +4167,13 @@
         <span class="n">token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DefaultResponse</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Sends a gift packet to a specified chat using the sender&#39;s wallet.</span>
+<span class="sd">        Sends a gift to a specified chat using the sender&#39;s wallet.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            chat_id (int): ID of the target chat (user, group, or channel).</span>
 <span class="sd">            chat_type (ChatType): Type of the target chat.</span>
 <span class="sd">            amount (int): Total amount of the gift to be distributed.</span>
-<span class="sd">            message (str): Message to accompany the gift packet.</span>
+<span class="sd">            message (str): Message to accompany the gift.</span>
 <span class="sd">            gift_count (int): Number of recipients who can claim the gift. Default is 1.</span>
 <span class="sd">            giving_type (GivingType): Distribution type (e.g., equally or randomly). Default is SAME.</span>
 <span class="sd">            show_amounts (bool): Whether to show individual received amounts to recipients.</span>
@@ -4072,7 +4183,8 @@
 <span class="sd">            DefaultResponse: A response indicating success or failure of the operation.</span>
 
 <span class="sd">        Note:</span>
-<span class="sd">            The wallet token is required to send the gift. If not supplied, the method fetches it via `get_wallet()`.</span>
+<span class="sd">            This method replaces the deprecated `send_giftpacket()`.</span>
+<span class="sd">            The wallet token is required to send the gift. If not supplied, it is fetched via `get_wallet()`.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">chat</span> <span class="o">=</span> <span class="n">Chat</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">chat_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">chat_type</span><span class="p">)</span>
         <span class="n">peer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_resolve_peer</span><span class="p">(</span><span class="n">chat</span><span class="p">)</span>
@@ -4096,22 +4208,23 @@
         <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="p">(</span><span class="n">call</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="Client.open_packet">
-<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.open_packet">[docs]</a>
-    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">open_packet</span><span class="p">(</span>
+<div class="viewcode-block" id="Client.open_gift">
+<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.open_gift">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">open_gift</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="n">InfoMessage</span><span class="p">],</span> <span class="n">receiver_token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PacketResponse</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Opens a gift packet from a specific message using the receiver&#39;s token.</span>
+<span class="sd">        Opens a gift from a specific message using the receiver&#39;s token.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            message (Union[Message, InfoMessage]): The message that contains the gift packet.</span>
+<span class="sd">            message (Union[Message, InfoMessage]): The message that contains the gift.</span>
 <span class="sd">            receiver_token (Optional[str]): Token to identify the receiver. If not provided, it is fetched automatically.</span>
 
 <span class="sd">        Returns:</span>
 <span class="sd">            PacketResponse: Contains details about the opening result, such as amount received, winners, and stats.</span>
 
 <span class="sd">        Note:</span>
+<span class="sd">            This method replaces the deprecated `open_packet()`.</span>
 <span class="sd">            If `receiver_token` is not provided, the method will call `get_wallet()` to obtain the current user&#39;s token.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ensure_info_message</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">rewrite_date</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -4121,6 +4234,58 @@
 
         <span class="n">call</span> <span class="o">=</span> <span class="n">OpenGiftPacket</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="n">message</span><span class="p">,</span> <span class="n">receiver_token</span><span class="o">=</span><span class="n">receiver_token</span><span class="p">)</span>
         <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="p">(</span><span class="n">call</span><span class="p">)</span></div>
+
+    
+<div class="viewcode-block" id="Client.send_giftpacket">
+<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.send_giftpacket">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">send_giftpacket</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">chat_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">chat_type</span><span class="p">:</span> <span class="n">ChatType</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">gift_count</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">giving_type</span><span class="p">:</span> <span class="n">GivingType</span> <span class="o">=</span> <span class="n">GivingType</span><span class="o">.</span><span class="n">SAME</span><span class="p">,</span>
+        <span class="n">show_amounts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DefaultResponse</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        DEPRECATED: Use `send_gift()` instead. This method will be removed in version 0.1.4.</span>
+
+<span class="sd">        Sends a gift packet to a specified chat using the sender&#39;s wallet.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            (same as send_gift)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+            <span class="s2">&quot;send_giftpacket() is deprecated and will be removed in a future version. Use send_gift() instead.&quot;</span><span class="p">,</span>
+            <span class="ne">DeprecationWarning</span><span class="p">,</span>
+            <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_gift</span><span class="p">(</span>
+            <span class="n">chat_id</span><span class="p">,</span> <span class="n">chat_type</span><span class="p">,</span> <span class="n">amount</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">gift_count</span><span class="p">,</span> <span class="n">giving_type</span><span class="p">,</span> <span class="n">show_amounts</span><span class="p">,</span> <span class="n">token</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Client.open_packet">
+<a class="viewcode-back" href="../../../pages/bot/client.html#aiobale.Client.open_packet">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">open_packet</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="n">InfoMessage</span><span class="p">],</span> <span class="n">receiver_token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PacketResponse</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        DEPRECATED: Use `open_gift()` instead. This method will be removed in version 0.1.4.</span>
+
+<span class="sd">        Opens a gift packet from a specific message using the receiver&#39;s token.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            (same as open_gift)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+            <span class="s2">&quot;open_packet() is deprecated and will be removed in a future version. Use open_gift() instead.&quot;</span><span class="p">,</span>
+            <span class="ne">DeprecationWarning</span><span class="p">,</span>
+            <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">open_gift</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">receiver_token</span><span class="p">)</span></div>
 </div>
 
 </pre></div>
@@ -4155,7 +4320,7 @@
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=92734c54"></script>
+</div><script src="../../../_static/documentation_options.js?v=360bc84d"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=46bd48cc"></script>

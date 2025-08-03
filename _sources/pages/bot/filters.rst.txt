@@ -1,0 +1,20 @@
+Filters
+=======
+
+.. currentmodule:: aiobale.filters
+
+.. autosummary::
+   :toctree: _autosummary
+   :nosignatures:
+
+   Filter
+   invert_f
+   or_f
+   and_f
+   RegexFilter
+   IsPrivate
+   IsGroupOrChannel
+   ChatTypeFilter
+   IsText
+   IsDocument
+   IsGift

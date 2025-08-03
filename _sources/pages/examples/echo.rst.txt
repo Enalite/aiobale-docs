@@ -7,16 +7,16 @@ A minimal example bot that replies to any message with the same content.
     :linenos:
 
     import asyncio
-    from aiobale2 import Client, Dispatcher
-    from aiobale2.types import Message
+    from aiobale import Client, Dispatcher
+    from aiobale.types import Message
 
     dp = Dispatcher()
-    client = Client(dp, "new.bale")
+    client = Client(dp)
 
 
     def extract_content(msg: Message):
-        if msg.content.document:
-            return 'document', msg.content.document
+        if msg.document:
+            return 'document', msg.document
         elif msg.text:
             return 'text', msg.text
         return None, None
@@ -26,7 +26,7 @@ A minimal example bot that replies to any message with the same content.
     async def echo(msg: Message):
         type_, value = extract_content(msg)
 
-        if msg.content.empty and msg.replied_to:
+        if not value and msg.replied_to:
             # This message was not originally sent by the user; it was forwarded from somewhere else
             type_, value = extract_content(msg.replied_to)
 

@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Events" href="events.html" /><link rel="prev" title="Client Package" href="../client_package.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Client - aiobale 0.1.2 documentation</title>
+        <title>Client - aiobale 0.1.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -169,7 +169,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">aiobale 0.1.2 documentation</div></a>
+      <a href="../../index.html"><div class="brand">aiobale 0.1.3 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -193,7 +193,7 @@
       <div class="sidebar-sticky"><a href="../../index.html" class="prof-cont" style="text-decoration: none;">
   <img src="../../_static/logo.png" alt="Logo" style="height: 48px; border-radius: 12px;">
   <div>
-    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.2</span></div>
+    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.3</span></div>
     <div style="font-size: 0.85rem; color: #888;">
         Modern async client for Bale.
     </div>
@@ -293,6 +293,7 @@
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.methods.GetMyKifpools.html">GetMyKifpools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.methods.SendGiftPacketWithWallet.html">SendGiftPacketWithWallet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.methods.OpenGiftPacket.html">OpenGiftPacket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.methods.SignOut.html">SignOut</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="types.html">Types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Types</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -317,6 +318,7 @@
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.StringValue.html">StringValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.IntValue.html">IntValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.BytesValue.html">BytesValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.IntListValue.html">IntListValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.InfoMessage.html">InfoMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.QuotedMessage.html">QuotedMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.MessageData.html">MessageData</a></li>
@@ -416,6 +418,20 @@
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.responses.FileURLResponse.html">FileURLResponse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.responses.WalletResponse.html">WalletResponse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.types.responses.PacketResponse.html">PacketResponse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="filters.html">Filters</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Filters</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.Filter.html">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.invert_f.html">aiobale.filters.invert_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.or_f.html">aiobale.filters.or_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.and_f.html">aiobale.filters.and_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.RegexFilter.html">RegexFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.IsPrivate.html">IsPrivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.IsGroupOrChannel.html">IsGroupOrChannel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.ChatTypeFilter.html">ChatTypeFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.IsText.html">IsText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.IsDocument.html">IsDocument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/aiobale.filters.IsGift.html">IsGift</a></li>
 </ul>
 </li>
 </ul>
@@ -574,14 +590,11 @@ in event handling and API interactions.</p>
 <li><p><strong>AiobaleError</strong> – For client-side errors such as invalid token or session issues.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>None</p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>run_in_background</strong> (<em>bool</em><em>, </em><em>optional</em>)</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>run_in_background</strong> (<em>bool</em><em>, </em><em>optional</em>)</p>
 </dd>
 </dl>
 <p>This method ensures the authentication token exists, connects to the server, performs the handshake,
@@ -692,6 +705,29 @@ the client itself are ignored.</p>
 <li><p><strong>BaleError</strong> – If the server returns an error during validation.</p></li>
 <li><p><strong>AiobaleError</strong> – For wrong password or client-side errors.</p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="aiobale.Client.sign_out">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sign_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delete_session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.sign_out"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.sign_out" title="Link to this definition">¶</a></dt>
+<dd><p>Signs out the current user and optionally deletes the session file.</p>
+<p>This method sends a sign-out request to the server, stops the client session,
+and if requested, deletes the local session file from disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>delete_session</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to delete the local session file after sign out.
+Defaults to True.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>OSError</strong> – If the session file deletion fails due to an OS-level error.</p></li>
+<li><p><strong>Exception</strong> – Any unexpected exceptions during stopping the client or file deletion.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
 </dd>
 </dl>
 </dd></dl>
@@ -3141,16 +3177,16 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="aiobale.Client.send_giftpacket">
-<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">send_giftpacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gift_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">giving_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GivingType.SAME</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_amounts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.send_giftpacket"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.send_giftpacket" title="Link to this definition">¶</a></dt>
-<dd><p>Sends a gift packet to a specified chat using the sender’s wallet.</p>
+<dt class="sig sig-object py" id="aiobale.Client.send_gift">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">send_gift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gift_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">giving_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GivingType.SAME</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_amounts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.send_gift"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.send_gift" title="Link to this definition">¶</a></dt>
+<dd><p>Sends a gift to a specified chat using the sender’s wallet.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<em>int</em>) – ID of the target chat (user, group, or channel).</p></li>
 <li><p><strong>chat_type</strong> (<a class="reference internal" href="_autosummary/aiobale.enums.ChatType.html#aiobale.enums.ChatType" title="aiobale.enums.ChatType"><em>ChatType</em></a>) – Type of the target chat.</p></li>
 <li><p><strong>amount</strong> (<em>int</em>) – Total amount of the gift to be distributed.</p></li>
-<li><p><strong>message</strong> (<em>str</em>) – Message to accompany the gift packet.</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Message to accompany the gift.</p></li>
 <li><p><strong>gift_count</strong> (<em>int</em>) – Number of recipients who can claim the gift. Default is 1.</p></li>
 <li><p><strong>giving_type</strong> (<a class="reference internal" href="_autosummary/aiobale.enums.GivingType.html#aiobale.enums.GivingType" title="aiobale.enums.GivingType"><em>GivingType</em></a>) – Distribution type (e.g., equally or randomly). Default is SAME.</p></li>
 <li><p><strong>show_amounts</strong> (<em>bool</em>) – Whether to show individual received amounts to recipients.</p></li>
@@ -3166,18 +3202,19 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
 </dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The wallet token is required to send the gift. If not supplied, the method fetches it via <cite>get_wallet()</cite>.</p>
+<p>This method replaces the deprecated <cite>send_giftpacket()</cite>.
+The wallet token is required to send the gift. If not supplied, it is fetched via <cite>get_wallet()</cite>.</p>
 </div>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="aiobale.Client.open_packet">
-<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open_packet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receiver_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.open_packet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.open_packet" title="Link to this definition">¶</a></dt>
-<dd><p>Opens a gift packet from a specific message using the receiver’s token.</p>
+<dt class="sig sig-object py" id="aiobale.Client.open_gift">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open_gift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receiver_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.open_gift"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.open_gift" title="Link to this definition">¶</a></dt>
+<dd><p>Opens a gift from a specific message using the receiver’s token.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>message</strong> (<em>Union</em><em>[</em><a class="reference internal" href="_autosummary/aiobale.types.Message.html#aiobale.types.Message" title="aiobale.types.Message"><em>Message</em></a><em>, </em><a class="reference internal" href="_autosummary/aiobale.types.InfoMessage.html#aiobale.types.InfoMessage" title="aiobale.types.InfoMessage"><em>InfoMessage</em></a><em>]</em>) – The message that contains the gift packet.</p></li>
+<li><p><strong>message</strong> (<em>Union</em><em>[</em><a class="reference internal" href="_autosummary/aiobale.types.Message.html#aiobale.types.Message" title="aiobale.types.Message"><em>Message</em></a><em>, </em><a class="reference internal" href="_autosummary/aiobale.types.InfoMessage.html#aiobale.types.InfoMessage" title="aiobale.types.InfoMessage"><em>InfoMessage</em></a><em>]</em>) – The message that contains the gift.</p></li>
 <li><p><strong>receiver_token</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Token to identify the receiver. If not provided, it is fetched automatically.</p></li>
 </ul>
 </dd>
@@ -3190,8 +3227,53 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
 </dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If <cite>receiver_token</cite> is not provided, the method will call <cite>get_wallet()</cite> to obtain the current user’s token.</p>
+<p>This method replaces the deprecated <cite>open_packet()</cite>.
+If <cite>receiver_token</cite> is not provided, the method will call <cite>get_wallet()</cite> to obtain the current user’s token.</p>
 </div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="aiobale.Client.send_giftpacket">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">send_giftpacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gift_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">giving_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GivingType.SAME</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_amounts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.send_giftpacket"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.send_giftpacket" title="Link to this definition">¶</a></dt>
+<dd><p>DEPRECATED: Use <cite>send_gift()</cite> instead. This method will be removed in version 0.1.4.</p>
+<p>Sends a gift packet to a specified chat using the sender’s wallet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>send_gift</strong><strong>)</strong> (<em>(</em><em>same as</em>)</p></li>
+<li><p><strong>chat_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>chat_type</strong> (<a class="reference internal" href="_autosummary/aiobale.enums.ChatType.html#aiobale.enums.ChatType" title="aiobale.enums.chat_type.ChatType"><em>ChatType</em></a>)</p></li>
+<li><p><strong>amount</strong> (<em>int</em>)</p></li>
+<li><p><strong>message</strong> (<em>str</em>)</p></li>
+<li><p><strong>gift_count</strong> (<em>int</em>)</p></li>
+<li><p><strong>giving_type</strong> (<a class="reference internal" href="_autosummary/aiobale.enums.GivingType.html#aiobale.enums.GivingType" title="aiobale.enums.giving_type.GivingType"><em>GivingType</em></a>)</p></li>
+<li><p><strong>show_amounts</strong> (<em>bool</em>)</p></li>
+<li><p><strong>token</strong> (<em>str</em><em> | </em><em>None</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="_autosummary/aiobale.types.responses.DefaultResponse.html#aiobale.types.responses.DefaultResponse" title="aiobale.types.responses.default.DefaultResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultResponse</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="aiobale.Client.open_packet">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open_packet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receiver_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aiobale/client/client.html#Client.open_packet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aiobale.Client.open_packet" title="Link to this definition">¶</a></dt>
+<dd><p>DEPRECATED: Use <cite>open_gift()</cite> instead. This method will be removed in version 0.1.4.</p>
+<p>Opens a gift packet from a specific message using the receiver’s token.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>open_gift</strong><strong>)</strong> (<em>(</em><em>same as</em>)</p></li>
+<li><p><strong>message</strong> (<a class="reference internal" href="_autosummary/aiobale.types.Message.html#aiobale.types.Message" title="aiobale.types.message.Message"><em>Message</em></a><em> | </em><a class="reference internal" href="_autosummary/aiobale.types.InfoMessage.html#aiobale.types.InfoMessage" title="aiobale.types.info_message.InfoMessage"><em>InfoMessage</em></a>)</p></li>
+<li><p><strong>receiver_token</strong> (<em>str</em><em> | </em><em>None</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="_autosummary/aiobale.types.responses.PacketResponse.html#aiobale.types.responses.PacketResponse" title="aiobale.types.responses.open_packet.PacketResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">PacketResponse</span></code></a></span></p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -3265,6 +3347,7 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
 <li><a class="reference internal" href="#aiobale.Client.start_phone_auth"><code class="docutils literal notranslate"><span class="pre">Client.start_phone_auth()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.validate_code"><code class="docutils literal notranslate"><span class="pre">Client.validate_code()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.validate_password"><code class="docutils literal notranslate"><span class="pre">Client.validate_password()</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.Client.sign_out"><code class="docutils literal notranslate"><span class="pre">Client.sign_out()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.send_message"><code class="docutils literal notranslate"><span class="pre">Client.send_message()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.edit_message"><code class="docutils literal notranslate"><span class="pre">Client.edit_message()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.delete_messages"><code class="docutils literal notranslate"><span class="pre">Client.delete_messages()</span></code></a></li>
@@ -3356,6 +3439,8 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
 <li><a class="reference internal" href="#aiobale.Client.send_audio"><code class="docutils literal notranslate"><span class="pre">Client.send_audio()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.send_gif"><code class="docutils literal notranslate"><span class="pre">Client.send_gif()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.get_wallet"><code class="docutils literal notranslate"><span class="pre">Client.get_wallet()</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.Client.send_gift"><code class="docutils literal notranslate"><span class="pre">Client.send_gift()</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.Client.open_gift"><code class="docutils literal notranslate"><span class="pre">Client.open_gift()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.send_giftpacket"><code class="docutils literal notranslate"><span class="pre">Client.send_giftpacket()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.Client.open_packet"><code class="docutils literal notranslate"><span class="pre">Client.open_packet()</span></code></a></li>
 </ul>
@@ -3371,7 +3456,7 @@ The <cite>cover_thumb</cite> must be no larger than 2 KB.</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=92734c54"></script>
+</div><script src="../../_static/documentation_options.js?v=360bc84d"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>

@@ -1,0 +1,7 @@
+﻿IsGroupOrChannel
+================
+
+.. autoclass:: aiobale.filters.IsGroupOrChannel
+   :members:
+   :undoc-members:
+   :member-order: bysource

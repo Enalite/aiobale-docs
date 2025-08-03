@@ -1,0 +1,7 @@
+﻿IsPrivate
+=========
+
+.. autoclass:: aiobale.filters.IsPrivate
+   :members:
+   :undoc-members:
+   :member-order: bysource

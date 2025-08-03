@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="MessageContent" href="aiobale.types.MessageContent.html" /><link rel="prev" title="Chat" href="aiobale.types.Chat.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.png"/><!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Message - aiobale 0.1.2 documentation</title>
+        <title>Message - aiobale 0.1.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -169,7 +169,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">aiobale 0.1.2 documentation</div></a>
+      <a href="../../../index.html"><div class="brand">aiobale 0.1.3 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -193,7 +193,7 @@
       <div class="sidebar-sticky"><a href="../../../index.html" class="prof-cont" style="text-decoration: none;">
   <img src="../../../_static/logo.png" alt="Logo" style="height: 48px; border-radius: 12px;">
   <div>
-    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.2</span></div>
+    <div style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.25rem;">Aiobale <span style="font-size: 0.8rem; color: #aaa;">v0.1.3</span></div>
     <div style="font-size: 0.85rem; color: #888;">
         Modern async client for Bale.
     </div>
@@ -293,6 +293,7 @@
 <li class="toctree-l3"><a class="reference internal" href="aiobale.methods.GetMyKifpools.html">GetMyKifpools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.methods.SendGiftPacketWithWallet.html">SendGiftPacketWithWallet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.methods.OpenGiftPacket.html">OpenGiftPacket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.methods.SignOut.html">SignOut</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../types.html">Types</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Types</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
@@ -317,6 +318,7 @@
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.StringValue.html">StringValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.IntValue.html">IntValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.BytesValue.html">BytesValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.types.IntListValue.html">IntListValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.InfoMessage.html">InfoMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.QuotedMessage.html">QuotedMessage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.MessageData.html">MessageData</a></li>
@@ -416,6 +418,20 @@
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.responses.FileURLResponse.html">FileURLResponse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.responses.WalletResponse.html">WalletResponse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="aiobale.types.responses.PacketResponse.html">PacketResponse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../filters.html">Filters</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Filters</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.Filter.html">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.invert_f.html">aiobale.filters.invert_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.or_f.html">aiobale.filters.or_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.and_f.html">aiobale.filters.and_f</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.RegexFilter.html">RegexFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.IsPrivate.html">IsPrivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.IsGroupOrChannel.html">IsGroupOrChannel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.ChatTypeFilter.html">ChatTypeFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.IsText.html">IsText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.IsDocument.html">IsDocument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aiobale.filters.IsGift.html">IsGift</a></li>
 </ul>
 </li>
 </ul>
@@ -555,6 +571,18 @@ Set automatically by <cite>attach_chat_to_reply</cite> validator.</p>
 <em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#aiobale.types.Message.text" title="Link to this definition">¶</a></dt>
 <dd><p>Returns the textual content of the message if available.</p>
 <p>If the message content is not text-based, returns None.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="aiobale.types.Message.document">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">document</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="aiobale.types.DocumentMessage.html#aiobale.types.DocumentMessage" title="aiobale.types.message_content.DocumentMessage"><span class="pre">DocumentMessage</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#aiobale.types.Message.document" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the document content of the message if available.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="aiobale.types.Message.gift">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">gift</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="aiobale.types.GiftPacket.html#aiobale.types.GiftPacket" title="aiobale.types.gift_packet.GiftPacket"><span class="pre">GiftPacket</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#aiobale.types.Message.gift" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the document content of the message if available.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1322,6 +1350,8 @@ the chat from this message is attached to it.</p>
 <li><a class="reference internal" href="#aiobale.types.Message.next_message"><code class="docutils literal notranslate"><span class="pre">Message.next_message</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.Message.replied_to"><code class="docutils literal notranslate"><span class="pre">Message.replied_to</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.Message.text"><code class="docutils literal notranslate"><span class="pre">Message.text</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.types.Message.document"><code class="docutils literal notranslate"><span class="pre">Message.document</span></code></a></li>
+<li><a class="reference internal" href="#aiobale.types.Message.gift"><code class="docutils literal notranslate"><span class="pre">Message.gift</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.Message.attach_chat_to_reply"><code class="docutils literal notranslate"><span class="pre">Message.attach_chat_to_reply()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.Message.answer"><code class="docutils literal notranslate"><span class="pre">Message.answer()</span></code></a></li>
 <li><a class="reference internal" href="#aiobale.types.Message.reply"><code class="docutils literal notranslate"><span class="pre">Message.reply()</span></code></a></li>
@@ -1381,7 +1411,7 @@ the chat from this message is attached to it.</p>
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=92734c54"></script>
+</div><script src="../../../_static/documentation_options.js?v=360bc84d"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=46bd48cc"></script>

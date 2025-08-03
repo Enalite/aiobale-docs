@@ -25,3 +25,4 @@ If you're looking for how to perform a certain action, **start by checking the C
    bot/types
    bot/enums
    bot/responses
+   bot/filters

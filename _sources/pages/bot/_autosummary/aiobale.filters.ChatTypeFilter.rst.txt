@@ -1,0 +1,7 @@
+﻿ChatTypeFilter
+==============
+
+.. autoclass:: aiobale.filters.ChatTypeFilter
+   :members:
+   :undoc-members:
+   :member-order: bysource

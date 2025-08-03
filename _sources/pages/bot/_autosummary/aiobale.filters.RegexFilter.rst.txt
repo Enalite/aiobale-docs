@@ -1,0 +1,7 @@
+﻿RegexFilter
+===========
+
+.. autoclass:: aiobale.filters.RegexFilter
+   :members:
+   :undoc-members:
+   :member-order: bysource
